@@ -1,16 +1,24 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      cart: []
+    };
   }
 
   render() {
     return (
-      <div className="App">
+      <div class="topnav">
         <h1>Hello React App</h1>
+        <a class="active" href="#home">
+          Home
+        </a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
       </div>
     );
   }
